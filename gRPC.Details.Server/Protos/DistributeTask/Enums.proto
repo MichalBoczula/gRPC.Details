@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option csharp_namespace = "gRPC.DeepDive.Service.test.Protos.DistributeTask";
+
+enum TaskStatus 
+{
+	NOTDEFINED = 0;
+	TODO = 1;
+	INPROGRESS = 2;
+	DONE = 3;
+}
+
+enum OperationStatus 
+{
+	INVALID = 0;
+	FAILURE = 1;
+	SUCCESS = 2;
+}

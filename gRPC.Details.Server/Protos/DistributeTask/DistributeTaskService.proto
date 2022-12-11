@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option csharp_namespace = "gRPC.DeepDive.Service.test.Protos.DistributeTask";
+
+import "Protos/DistributeTask/Enums.proto";
+
+service DistributeTaskService {
+	rpc AddTask(AddedTask) returns (AddedTaskResult);
+}
+
+message AddedTask
+{
+	int32 toDoListId = 1;
+	TaskStatus statusId = 2;
+	string name = 3;
+}
+
+message AddedTaskResult
+{	
+	string message = 1;
+	OperationStatus statusId = 2;
+}	
