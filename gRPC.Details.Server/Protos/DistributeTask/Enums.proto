@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option csharp_namespace = "gRPC.DeepDive.Service.test.Protos.DistributeTask";
+option csharp_namespace = "gRPC.Details.Server.Protos.DistributeTask";
 
 enum TaskStatus 
 {

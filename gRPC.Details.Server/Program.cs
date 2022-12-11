@@ -1,5 +1,6 @@
 using gRPC.DeepDive.Service.Application.DependencyInjection;
 using gRPC.DeepDive.Service.Persistance.DependencyInjection;
+using gRPC.Details.Server.Services.gRPC;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,5 +24,7 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.MapGrpcService<DistributeTaskGRPC>();
 
 app.Run();
