@@ -1,8 +1,8 @@
-﻿using gRPC.Details.Service.Application.Contracts;
-using gRPC.Details.Service.Persistance.Context;
+﻿using gRPC.Details.Client.Application.Contracts;
+using gRPC.Details.Client.Persistance.Context;
 using Microsoft.EntityFrameworkCore;
 
-namespace gRPC.Details.Service.Persistance.DependencyInjection
+namespace gRPC.Details.Client.Persistance.DependencyInjection
 {
     internal static class PersistanceDI
     {

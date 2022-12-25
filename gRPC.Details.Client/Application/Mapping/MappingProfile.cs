@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using System.Reflection;
 
-namespace gRPC.Details.Service.Application.Mapping
+namespace gRPC.Details.Client.Application.Mapping
 {
     internal class MappingProfile : Profile
     {

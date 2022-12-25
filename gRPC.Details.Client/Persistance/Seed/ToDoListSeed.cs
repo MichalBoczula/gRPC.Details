@@ -1,7 +1,7 @@
-﻿using gRPC.Details.Service.Domain.Entities;
+﻿using gRPC.Details.Client.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace gRPC.Details.Service.Persistance.Seed
+namespace gRPC.Details.Client.Persistance.Seed
 {
     internal static class ToDoListSeed
     {

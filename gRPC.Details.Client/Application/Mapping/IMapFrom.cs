@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 
-namespace gRPC.Details.Service.Application.Mapping
+namespace gRPC.Details.Client.Application.Mapping
 {
     internal interface IMapFrom<T>
     {

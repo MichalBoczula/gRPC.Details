@@ -1,4 +1,4 @@
-﻿namespace gRPC.Details.Service.Domain.Enums
+﻿namespace gRPC.Details.Client.Domain.Enums
 {
     internal enum Status
     {

@@ -1,14 +1,14 @@
 ﻿using AutoMapper;
-using gRPC.DeepDive.Service.Application.Contracts;
+using gRPC.Details.Service.Application.Contracts;
 
-namespace gRPC.DeepDive.Service.Application.Features.Common
+namespace gRPC.Details.Service.Application.Features.Common
 {
-    public class QueryBase
+    internal class QueryBase
     {
         protected readonly IServiceDbContext _context;
         protected readonly IMapper _mapper;
 
-        public QueryBase(IServiceDbContext context, IMapper mapper)
+        internal QueryBase(IServiceDbContext context, IMapper mapper)
         {
             _context = context;
             _mapper = mapper;

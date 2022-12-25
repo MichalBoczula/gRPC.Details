@@ -1,6 +1,6 @@
-using gRPC.DeepDive.Service.Application.DependencyInjection;
-using gRPC.DeepDive.Service.Persistance.DependencyInjection;
 using gRPC.Details.Server.Services.gRPC;
+using gRPC.Details.Service.Application.DependencyInjection;
+using gRPC.Details.Service.Persistance.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 

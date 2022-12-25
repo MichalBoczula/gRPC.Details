@@ -1,13 +1,14 @@
 ﻿using Microsoft.EntityFrameworkCore.Storage;
 using Microsoft.EntityFrameworkCore;
-using gRPC.Details.Service.Domain.Entities;
+using gRPC.Details.Client.Domain.Entities;
+using Microsoft.EntityFrameworkCore.Internal;
 
-namespace gRPC.Details.Service.Application.Contracts
+namespace gRPC.Details.Client.Application.Contracts
 {
     internal interface IServiceDbContext
     {
-        DbSet<ToDoList> ToDoLists { get; set; }
-        DbSet<ToDoTask> ToDoTasks { get; set; }
+        internal DbSet<ToDoList> ToDoLists { get; set; }
+        internal DbSet<ToDoTask> ToDoTasks { get; set; }
         Task<int> SaveChangesAsync(CancellationToken cancellationToken);
         Task<IDbContextTransaction> BeginTransaction();
         Task CommitTransaction(IDbContextTransaction Transaction, CancellationToken cancellationToken);

@@ -1,8 +1,8 @@
-﻿using gRPC.Details.Service.Domain.Entities;
+﻿using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using gRPC.Details.Client.Domain.Entities;
 
-namespace gRPC.Details.Service.Persistance.Configuration
+namespace gRPC.Details.Client.Persistance.Configuration
 {
     internal class ToDoTaskConfiguration : IEntityTypeConfiguration<ToDoTask>
     {

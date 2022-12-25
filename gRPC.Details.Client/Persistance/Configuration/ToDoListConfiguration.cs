@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Microsoft.EntityFrameworkCore;
-using gRPC.Details.Service.Domain.Entities;
+using gRPC.Details.Client.Domain.Entities;
 
-namespace gRPC.Details.Service.Persistance.Configuration
+namespace gRPC.Details.Client.Persistance.Configuration
 {
     internal class ToDoListConfiguration : IEntityTypeConfiguration<ToDoList>
     {

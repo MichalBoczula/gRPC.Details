@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
-using gRPC.Details.Service.Application.Contracts;
+using gRPC.Details.Client.Application.Contracts;
 
-namespace gRPC.Details.Service.Application.Features.Common
+namespace gRPC.Details.Client.Application.Features.Common
 {
     internal class CommandBase
     {

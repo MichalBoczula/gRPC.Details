@@ -1,7 +1,7 @@
 ﻿using MediatR;
 using System.Reflection;
 
-namespace gRPC.Details.Service.Application.DependencyInjection
+namespace gRPC.Details.Client.Application.DependencyInjection
 {
     internal static class ApplicationDI
     {

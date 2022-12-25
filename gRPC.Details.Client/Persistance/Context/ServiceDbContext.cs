@@ -1,14 +1,14 @@
-﻿using gRPC.Details.Service.Application.Contracts;
-using gRPC.Details.Service.Domain.Entities;
-using gRPC.Details.Service.Persistance.Seed;
+﻿using Microsoft.EntityFrameworkCore.Storage;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Storage;
 using System.Diagnostics.CodeAnalysis;
 using System.Reflection;
+using gRPC.Details.Client.Application.Contracts;
+using gRPC.Details.Client.Domain.Entities;
+using gRPC.Details.Client.Persistance.Seed;
 
-namespace gRPC.Details.Service.Persistance.Context
+namespace gRPC.Details.Client.Persistance.Context
 {
-    internal class ServiceDbContext : DbContext, IServiceDbContext
+    internal sealed class ServiceDbContext : DbContext, IServiceDbContext
     {
         public DbSet<ToDoList> ToDoLists { get; set; }
         public DbSet<ToDoTask> ToDoTasks { get; set; }

@@ -1,4 +1,4 @@
-﻿namespace gRPC.Details.Service.Domain.Entities
+﻿namespace gRPC.Details.Client.Domain.Entities
 {
     internal class ToDoTask
     {
