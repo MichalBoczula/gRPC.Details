@@ -2,7 +2,7 @@ syntax = "proto3";
 
 option csharp_namespace = "gRPC.Details.Server.Protos.DistributeTask";
 
-import "Protos/DistributeTask/Enums.proto";
+import "Enums.proto";
 
 service DistributeTaskService {
 	rpc AddTask(AddedTask) returns (AddedTaskResult);

@@ -7,7 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Grpc.AspNetCore" Version="2.49.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Protobuf Include="..\gRPC.Details.Server\Protos\DistributeTask\DistributeTaskService.proto" GrpcServices="Client">
+      <Link>Protos\DistributeTaskService.proto</Link>
+    </Protobuf>
+    <Protobuf Include="..\gRPC.Details.Server\Protos\DistributeTask\Enums.proto" GrpcServices="None">
+      <Link>Protos\Enums.proto</Link>
+    </Protobuf>
   </ItemGroup>
 
 </Project>

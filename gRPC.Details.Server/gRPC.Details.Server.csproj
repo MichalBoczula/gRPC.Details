@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -30,8 +30,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Protobuf Include="Protos\DistributeTask\DistributeTaskService.proto" GrpcServices="Server" />
-    <Protobuf Include="Protos\DistributeTask\Enums.proto" GrpcServices="None" />
+    <Protobuf Include="Protos\DistributeTask\DistributeTaskService.proto" GrpcServices="Server" ProtoRoot="Protos\DistributeTask\"/>
+    <Protobuf Include="Protos\DistributeTask\Enums.proto" GrpcServices="None" ProtoRoot="Protos\DistributeTask\"/>
   </ItemGroup>
 
 </Project>
